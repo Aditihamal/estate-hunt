@@ -1,0 +1,71 @@
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.admin-sidebar {
+  width: 240px;
+  background-color: #1e1e2f;
+  padding: 30px 20px;
+  color: white;
+
+  .admin-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  .admin-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .admin-link {
+      color: #bdc3c7;
+      text-decoration: none;
+      font-size: 16px;
+
+      &:hover,
+      &.active {
+        color: #ffffff;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.admin-main {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 30px;
+
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .admin-profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #ccc;
+      }
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+}

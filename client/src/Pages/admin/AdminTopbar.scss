@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+  
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+      font-size: 20px;
+  
+      img {
+        height: 28px;
+      }
+    }
+  
+    .dashboard-label {
+      font-weight: 500;
+      font-size: 16px;
+      padding: 8px 20px;
+      background-color: #fdd835;
+      border-radius: 4px;
+    }
+  }
+  

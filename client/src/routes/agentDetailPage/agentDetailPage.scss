@@ -1,0 +1,203 @@
+.agentDetailPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width:none;
+  padding: 20px;
+}
+
+.agentInfo {
+  text-align: center;
+  margin-bottom: 20px;
+
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #666;
+    font-size: 1em;
+  }
+}
+
+.agentPosts {
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .postList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .postCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .imageContainer {
+      text-align: center;
+      margin-bottom: 10px;
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+
+    .textContainer {
+      h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      .address {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        img {
+          width: 16px;
+          height: 16px;
+          margin-right: 5px;
+        }
+
+        span {
+          font-size: 1em;
+          color: #666;
+        }
+      }
+
+      .price {
+        font-size: 1.2em;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .features {
+        display: flex;
+        justify-content: space-between;
+
+        .feature {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+          }
+
+          span {
+            font-size: 1em;
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Feedback Section
+.feedbackSection {
+  // height: 300px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+
+  .feedbackForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    textarea {
+      width: 100%;
+      max-width: 600px;
+      height: 100px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: none;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px 15px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+// Feedback List (Scrollable)
+.feedbackList {
+  h2 {
+    text-align: center;
+  }
+
+  .feedbackContainer {
+    max-height: 300px; // Limit height to make it scrollable
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+
+  .feedbackCard {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .feedbackText {
+      h3 {
+        margin: 0;
+        font-size: 1.1em;
+      }
+
+      p {
+        margin: 5px 0;
+        color: #555;
+      }
+    }
+  }
+}

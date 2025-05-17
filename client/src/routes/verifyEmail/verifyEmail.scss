@@ -1,0 +1,23 @@
+.verifyEmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    input, button {
+      padding: 0.5rem;
+      font-size: 16px;
+    }
+  
+    span {
+      color: red;
+    }
+  }
+  

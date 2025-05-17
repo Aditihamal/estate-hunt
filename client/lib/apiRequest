@@ -1,0 +1,22 @@
+import axios from "axios";
+
+
+const apiRequest = axios.create({
+  baseURL: "http://localhost:8800/api",
+  withCredentials: true, // ✅ Important for sending cookies like JWT
+});
+
+
+
+// Intercept every request and attach the token
+apiRequest.interceptors.request.use((config) => {
+  const storedUser = localStorage.getItem("currentUser");
+  if (storedUser) {
+    const parsedUser = JSON.parse(storedUser);
+    config.headers.Authorization = `Bearer ${parsedUser.token}`;
+  }
+  return config;
+});
+
+
+export default apiRequest;
